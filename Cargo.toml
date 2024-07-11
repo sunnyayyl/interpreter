@@ -1,0 +1,10 @@
+[workspace]
+members = ["parser","lexer","repl","app","core","tests"]
+resolver = "2"
+[workspace.dependencies]
+lazy_static = "1.4.0"
+lexer={path="./lexer"}
+repl={path="./repl"}
+parser={path="./parser"}
+core={path="./core"}
+paste = "1.0.15"
